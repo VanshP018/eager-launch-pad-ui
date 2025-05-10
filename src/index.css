@@ -59,4 +59,13 @@
   .glow-icon {
     filter: drop-shadow(0 0 8px rgba(0, 229, 229, 0.6));
   }
+  
+  @keyframes horizontal-orbit {
+    from {
+      transform: rotateX(75deg) rotate(0deg) translateX(60px);
+    }
+    to {
+      transform: rotateX(75deg) rotate(360deg) translateX(60px);
+    }
+  }
 }

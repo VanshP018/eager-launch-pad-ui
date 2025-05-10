@@ -17,9 +17,9 @@ const Bubble: React.FC<BubbleProps> = ({ size, color, delay, duration, startPosi
         width: `${size}px`,
         height: `${size}px`,
         backgroundColor: color,
-        animation: `orbit ${duration}s infinite linear`,
+        animation: `horizontal-orbit ${duration}s infinite linear`,
         animationDelay: `${delay}s`,
-        transform: `rotate(${startPosition}deg) translateX(60px)`,
+        transform: `rotateX(75deg) rotate(${startPosition}deg) translateX(60px)`,
       }}
     ></div>
   );
@@ -59,7 +59,7 @@ const BubbleRing: React.FC = () => {
 
   return (
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="relative w-40 h-40">
+      <div className="relative w-40 h-40 transform-gpu" style={{ perspective: '800px' }}>
         {bubbles}
       </div>
     </div>
