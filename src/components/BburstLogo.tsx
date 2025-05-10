@@ -5,7 +5,11 @@ const BburstLogo = () => {
   return (
     <div className="text-center mb-4 relative">
       <div className="relative inline-block">
-        <div className="text-5xl font-bold relative z-10">
+        <div className="planet-logo">
+          <div className="planet-circle"></div>
+          <div className="planet-ring"></div>
+        </div>
+        <div className="text-5xl font-bold relative z-10 mt-6">
           <span className="text-bburst-teal">B</span>
           <span className="text-white">burst</span>
         </div>
